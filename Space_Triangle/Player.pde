@@ -13,7 +13,7 @@ class player {
   PVector hitboxloc;
 
   player() {
-    location = new PVector(width/2, height/2);
+    location = new PVector(0, 0);
     velocity = new PVector(0, 0);
     acceleration = new PVector(0, 0);
     hitboxloc = new PVector(0,0);
@@ -45,13 +45,11 @@ class player {
     hitboxloc.x = location.x;
     hitboxloc.y = location.y;
     shape(shipForm, location.x, location.y, 10, 10);
-    println(location.x, location.y);
     rectMode(CENTER);
     noFill();
     square(hitboxloc.x, hitboxloc.y, shipsize);
     fill(255);
-    println(hitboxloc.x, hitboxloc.y);
-  }
+  } 
 
 
 

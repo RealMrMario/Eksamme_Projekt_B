@@ -1,3 +1,4 @@
+//OBS NÅR MAN STARTER SPILLET ER SPILLEREN ØVERST I VENSTRE HJØRNE. MAN SKAL LIGE VRIDE SPILLEREN UD AF DET HJØRNE. ROTER 180* CIRKA
 ArrayList<enemy> enemies;
 player n1;
 int score;
@@ -85,6 +86,12 @@ void keyPressed() {
     keys[2] =true;
   if (key == 'd')
     keys[3] = true;
+  if(keyCode == UP)
+  keys[0] = true;
+  if (keyCode == LEFT)
+  keys[2] = true;
+  if(keyCode == RIGHT)
+  keys[3] = true;
 
 }
 
@@ -95,4 +102,10 @@ void keyReleased() {
     keys[2] = false;
   if (key == 'd')
     keys[3] = false;
+  if(keyCode == UP)
+  keys[0] = false;
+    if (keyCode == LEFT)
+  keys[2] = false;
+  if(keyCode == RIGHT)
+  keys[3] = false;
 }

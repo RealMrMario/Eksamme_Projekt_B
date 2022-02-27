@@ -29,5 +29,7 @@ class menu {
     text("Space Rush", width/2, 400);
     textSize(30);
     text("Press space to start", width/2, 450);
+    textSize(25);
+    text("Controls: W/Uparrow = forward, A/Leftarrow = rotate left, D/RightArrow = rotate right", width/2, 500);
   }
 }
